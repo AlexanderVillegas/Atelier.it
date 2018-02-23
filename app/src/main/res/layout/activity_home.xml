@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atelier.it.atelier.Home">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:menu="@menu/toolbar"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/lblsaludo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="14dp"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="normal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sr. Nicolas Guzmán"
+            android:textSize="26dp"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="normal"/>
+        <TextView
+            android:id="@+id/lblhabitacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habitación"
+            android:textSize="14dp"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="normal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3122"
+            android:textSize="26dp"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jr. Suite Oceanfront"
+            android:textSize="14dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="25dp"/>
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginTop="10dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!--app:srcCompat="@drawable/ic_place"-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/uno"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="18dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/card1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            app:contentPadding = "8dp">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/btn_llave"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_rowWeight="1"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/card1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            app:contentPadding = "8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:id="@+id/btn_cuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                app:contentPadding = "8dp">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/btn_tienda"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/tres"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                app:contentPadding = "8dp">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/btn_restaurantes"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                app:contentPadding = "8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <TextView
+                    android:id="@+id/btn_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/dos"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                app:contentPadding = "8dp">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/btn_mapa"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                app:contentPadding = "8dp">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/btn_resortservice"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                app:contentPadding = "8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <TextView
+                    android:id="@+id/btn_roomservice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                app:contentPadding = "8dp">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Reportar problemas"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </GridLayout>
+    </LinearLayout>
+</ScrollView>
